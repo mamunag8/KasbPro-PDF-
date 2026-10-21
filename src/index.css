@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html, body, #root {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Custom sleek scrollbars */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.4);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.55);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(99, 102, 241, 0.85);
+}
+
+/* Book spine shadow effect for 2-Page Book Content Mode */
+.book-spread-left {
+  box-shadow: inset -18px 0 28px -12px rgba(0, 0, 0, 0.22), 0 12px 32px -8px rgba(0, 0, 0, 0.45);
+}
+
+.book-spread-right {
+  box-shadow: inset 18px 0 28px -12px rgba(0, 0, 0, 0.22), 0 12px 32px -8px rgba(0, 0, 0, 0.45);
+}
+
+/* Reading Mode Themes */
+.reading-theme-day {
+  background-color: #ffffff;
+  color: #1e293b;
+}
+
+.reading-theme-sepia {
+  background-color: #f6efe0;
+  color: #3d3122;
+}
+
+.reading-theme-night {
+  background-color: #0b1120;
+  color: #e2e8f0;
+}
+
+.reading-theme-sage {
+  background-color: #e6f0e9;
+  color: #1f3528;
+}
