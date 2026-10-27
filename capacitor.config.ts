@@ -2,7 +2,7 @@ import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
   appId: 'com.kasbllc.kasbpropdf',
-  appName: 'KasbPro PDF Editor',
+  appName: 'KasbPro PDF Editor & Reader',
   webDir: 'dist',
   server: {
     androidScheme: 'https'
